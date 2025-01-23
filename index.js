@@ -7,7 +7,7 @@ var versions = {
   '0.1.7': require('./versions/0.1.7'),
   '1.7.0': require('./versions/1.7.0'),
   '2.0.0': require('./versions/2.0.0'),
-  '8.0.0': require('./versions/8.0.0')
+  '8.0.0': require('./versions/8.0.0').pathToRegexp,
 }
 
 var _ = document.querySelector.bind(document)
