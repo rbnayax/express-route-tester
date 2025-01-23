@@ -13,10 +13,11 @@
     "watchify": "^3.9.0"
   },
   "scripts": {
-    "build": "npm run i-0.1.7 && npm run i-1.7.0 && npm run i-2.0.0 && npm run compile",
+    "build": "npm run i-0.1.7 && npm run i-1.7.0 && npm run i-2.0.0 && npm run i-8.0.0 && npm run compile",
     "i-0.1.7": "cd versions/0.1.7 && npm i",
     "i-1.7.0": "cd versions/1.7.0 && npm i",
     "i-2.0.0": "cd versions/2.0.0 && npm i",
+    "i-8.0.0": "cd versions/8.0.0 && npm i",
     "compile": "browserify index.js -d -p [minifyify --compressPath . --map build.js.map --output build.js.map] > build.js",
     "dev": "watchify -v --watch -d index.js -o build.js"
   },
