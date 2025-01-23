@@ -67,6 +67,7 @@ function update () {
   keys = []
   try {
     regexp = pathRegexp(_('#inputRoute').value, keys, opts)
+    regexp = regexp.regexp || regexp
   } catch (e) {
     show('.is-error')
     hide('.is-not-match')
